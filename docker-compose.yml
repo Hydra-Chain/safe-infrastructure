@@ -30,7 +30,7 @@ services:
     ports:
       - "${REVERSE_PROXY_PORT}:8000"
     volumes:
-      - /data/compose/6/docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - /opt/sources/safe-infrastructure/docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - nginx-shared-txs:/nginx-txs
       - nginx-shared-cfg:/nginx-cfg
     depends_on:
